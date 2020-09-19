@@ -6,7 +6,7 @@ export default function WelcomePage() {
     <div className="home-welcome-page">
       <header className="app-header">
         <img src={require('../../images/rekit-react.png')} className="rekit-logo" alt="logo" />
-        <h1 className="app-title">Welcome to Rekit React, from Docker!</h1>
+        <h1 className="app-title">Welcome to Rekit React, from Docker! It works! I can't believe!</h1>
       </header>
       <div className="app-intro">
         <h3>To get started:</h3>

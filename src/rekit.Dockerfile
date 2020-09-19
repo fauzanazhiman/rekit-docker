@@ -16,14 +16,10 @@ RUN apt install -y make python build-essential
 # install rekit
 RUN npm install -g rekit 
 RUN npm install -g rekit-studio --unsafe-perm=true --allow-root
-
-# install app dependencies
 COPY package*.json ./
-RUN npm install
-RUN npm install react-scripts -g
 
 # add app
 COPY . ./
 
 # start app
-CMD ["rekit-studio", "-p 3040"]
+CMD ["rekit-studio", "-p 8031"]
